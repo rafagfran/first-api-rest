@@ -6,11 +6,10 @@ import express from 'express';
 // criar uma instancia do express
 const app = express();
 
-//Usar o Router
-app.use(routes)
-
 // indicar para o express ler body com JSON
 app.use(express.json());
 
+//Usar o Router
+app.use(routes)
 
 export default app;
